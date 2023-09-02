@@ -1,0 +1,379 @@
+       body {
+        margin: 0;
+        width: 40%;
+        border: 2px solid black;
+        border-collapse:collapse ;
+        margin-left: 300px;
+        background-color:mediumseagreen;
+
+      }
+      
+      h1 {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+      }
+      
+      .head,
+      .left_arm,
+      .torso,
+      .right_arm,
+      .left_leg,
+      .right_leg {
+        background-color:blue;
+        border-image-outset: 50px ;
+      }
+      .cone{
+        width: 90px;
+        height: 50px;
+        margin-top: 20px;
+        border-radius: 500px 500px 0px 0px;
+        background-color: aliceblue;
+      }
+      
+      .head {
+        width: 200px;
+        margin: 0 auto;
+        height: 170px;
+        border-radius: 200px 200px 200px 200px;
+        margin-bottom: 10px;
+      }
+      
+      .eyes {
+        position: relative;
+        top: 50px;
+      }
+      
+      .left_eye,
+      .right_eye {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: white;
+        display: inline-block;
+      }
+      
+      .left_eye {
+        margin-left: 30px;
+      }
+      
+      .right_eye {
+        margin-left: 100px;
+      }
+      .nose{
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        margin-top: 40px;
+        margin-left:40% ;
+        border-radius: 30px 30px 0px 0px ;
+        background-color: rgb(247, 78, 204);
+       }
+      
+      .upper_body {
+        width: 300px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 50px 50px 50px;
+        display: flex;
+      }
+      
+      .left_arm,
+      .right_arm {
+        width: 30px;
+        height: 150px;
+        border-radius: 20px 50px 50px 1px;
+        margin-top: 20px;
+      }
+      
+      .left_arm {
+        margin-right: 10px;
+      }
+      
+      .left_arm {
+        margin-right: 10px;
+      }
+      
+      .right_arm {
+        margin-left: 10px;
+      }
+      
+      .torso {
+        width: 200px;
+        height: 200px;
+        border-radius: 60px 60px 60px 60px;
+        transition: border-radius 1s;
+      }
+      
+      .lower_body {
+        width: 200px;
+        height: 200px;
+        border-radius: 50px 50px 50px;
+        margin: 0 auto;
+      }
+      
+      .left_leg,
+      .right_leg {
+        width: 40px;
+        height: 160px;
+        border-radius: 10px 10px 10px 100px;
+        display: inline-block;
+      }
+      
+      .left_leg {
+        margin-left: 45px; 
+      
+      }
+      
+      .right_leg {
+        margin-left: 30px;
+        
+      }
+      
+      .robots:hover .head {
+        animation: movehead 2s infinite;
+      }
+      
+      .robots:hover .torso {
+        border-radius: 40%;
+        animation: movetorso 2s infinite;
+      }
+      
+      .robots:hover .left_arm {
+        animation: moveleftarm 2s infinite;
+      }
+      
+      .robots:hover .right_arm {
+        animation: moverightarm 2s infinite;
+      }
+      
+      .robots:hover .left_leg {
+        animation: moveleftleg 2s infinite;
+      }
+      
+      .robots:hover .right_leg {
+        animation: moverightleg 2s infinite;
+      }
+    
+      @keyframes movehead {
+        0% {
+          width: 200px;
+        }
+      
+        25% {
+          width: 300px;
+        }
+      
+        50% {
+          width: 200px;
+        }
+      
+        75% {
+          width: 300px;
+        }
+      
+        100% {
+          width: 200px;
+        }
+      }
+     
+      
+      @keyframes moveleftarm {
+        0% {
+          background-color: aqua;
+          transform: rotate(0deg);
+          transform-origin: top center;
+          background-color: blanchedalmond;
+        }
+      
+        25% {
+          background-color: blue;
+          transform: rotate(220deg);
+          transform-origin: top center;
+        }
+      
+        50% {
+          transform: rotate(0deg);
+          transform-origin: top center;
+          background-color: blanchedalmond;
+        }
+      
+        75% {
+          background-color: black;
+          transform: rotate(90deg);
+          transform-origin: top center;
+        }
+      
+        100% {
+          background-color: violet;
+          transform: rotate(0deg);
+          transform-origin: top center;
+        }
+      }
+      
+      @keyframes moverightarm {
+        0% {
+          background-color: aqua;
+
+          transform: rotate(0deg);
+          transform-origin: top center;
+        }
+      
+        25% {
+          background-color: blue;
+          transform: rotate(-220deg);
+          transform-origin: top center;
+        }
+      
+        50% {
+          background-color: blanchedalmond;
+          transform: rotate(0deg);
+          transform-origin: top center;
+        }
+      
+        75% {
+          background-color: black;
+          transform: rotate(-90deg);
+          transform-origin: top center;
+        }
+      
+        100% {
+          background-color: violet;
+          transform: rotate(0deg);
+          transform-origin: top center;
+        }
+      }
+      
+      @keyframes moveleftleg {
+        0% {
+          background-color: aqua;
+          transform: rotate(0deg);
+        }
+      
+        25% {
+          background-color: blue;
+          transform: rotate(50deg);
+        }
+      
+        50% {
+          background-color: blanchedalmond;
+          transform: rotate(0deg);
+        }
+      
+        75% {
+          background-color: black;
+          transform: rotate(20deg);
+        }
+      
+        100% {
+          background-color: violet;
+          transform: rotate(0deg);
+        }
+      }
+      
+      @keyframes moverightleg {
+        0% {
+          background-color: aqua;
+          transform: rotate(0deg);
+
+        }
+      
+        25% {
+          background-color: blue;
+          transform: rotate(-50deg);
+        }
+      
+        50% {
+          background-color: blanchedalmond;
+          transform: rotate(0deg);
+        }
+      
+        75% {
+          background-color: black;
+          transform: rotate(-20deg);
+        }
+      
+        100% {
+          background-color: violet;
+          transform: rotate(0deg);
+        }
+      }
+      
+      @keyframes movetorso {
+        from {
+        
+          transform: rotate(0deg);
+        }
+      
+        to {
+          transform: rotate(380deg);
+        }
+      }
+      @keyframes moveleftleg {
+        from {
+          transform: rotate(-120deg);
+        }
+      
+        to {
+          transform: rotate(-180deg);
+        }
+      }
+      @keyframes movetorso{
+        0% {
+          background-color: aqua;
+          transform: rotate(0deg);
+        
+        }
+      
+        25% {
+          background-color: blue;
+          transform: rotate(20deg);
+          
+        }
+      
+        50% {
+          background-color: blanchedalmond;
+          transform: rotate(0deg);
+        }
+      
+        75% {
+          background-color: black;
+          transform: rotate(50deg);
+        }
+      
+        100% {
+          background-color: violet;
+          transform: rotate(0deg);
+        }
+      }
+      @keyframes moverightleg {
+        from {
+          transform: rotate(120deg);
+        }
+      
+        to {
+          transform: rotate(180deg);
+        }
+      }
+      @keyframes moverightarm {
+        from {
+          transform: rotate(0deg);
+        }
+      
+        to {
+          transform: rotate(180deg);
+        }
+      }
+      @keyframes moveleftarm{
+        from {
+          transform: rotate(0deg);
+        }
+      
+        to {
+          transform: rotate(-180deg);
+        }
+      }
+      center{
+        border: 2px solid black;
+        background-color:brown;
+    }
+  
